@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details - MusiEvent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MusiEvent</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Create Event</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Event Details Section -->
+<div class="container my-5">
+  <div class="row">
+    <!-- Event Image -->
+    <div class="col-md-6">
+      <img src="https://via.placeholder.com/600x400" class="img-fluid rounded mb-3" alt="Event Image">
+    </div>
+    
+    <!-- Event Info -->
+    <div class="col-md-6">
+      <h2>Rock Fest 2024</h2>
+      <p>Join us for the biggest rock festival of the year with performances from your favorite bands.</p>
+      <p><strong>Date:</strong> May 5, 2024</p>
+      <p><strong>Time:</strong> 3:00 PM - 11:00 PM</p>
+      <p><strong>Venue:</strong> Brisbane Arena</p>
+      <p><strong>Status:</strong> <span class="badge bg-success">Open</span></p>
+      
+      <!-- Booking Section -->
+      <div class="mt-4">
+        <h4>Book Tickets</h4>
+        <form>
+          <div class="mb-3">
+            <label for="ticketCount" class="form-label">Select Number of Tickets</label>
+            <input type="number" id="ticketCount" class="form-control" min="1" value="1">
+          </div>
+          <button type="button" class="btn btn-primary">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Comments Section -->
+<div class="container my-5">
+  <h3>Comments</h3>
+  
+  <div class="list-group mb-4">
+    <div class="list-group-item">
+      <h5>User123</h5>
+      <p>This event is going to be amazing! Can't wait.</p>
+    </div>
+    <div class="list-group-item">
+      <h5>RockFan42</h5>
+      <p>I've been to the previous Rock Fest, and it was incredible. Highly recommend!</p>
+    </div>
+  </div>
+  
+  <div class="mb-4">
+    <h4>Post a Comment</h4>
+    <form>
+      <div class="mb-3">
+        <label for="userComment" class="form-label">Your Comment</label>
+        <textarea class="form-control" id="userComment" rows="3" placeholder="Share your thoughts..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary">Post Comment</button>
+    </form>
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2024 MusiEvent</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
