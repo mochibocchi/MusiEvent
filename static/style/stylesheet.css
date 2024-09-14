@@ -34,10 +34,12 @@ html, body {
   height: 100px;
 }
 
+/* The logo */
 .navbar-brand {
   font-size: 2rem;
   font-weight: bold;
   color: white;
+  pointer-events: none;
 }
 
 .navbar-nav .nav-link {
